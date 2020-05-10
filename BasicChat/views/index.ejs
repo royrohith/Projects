@@ -1,0 +1,20 @@
+<div class="join-container">
+    <header class="join-header">
+        <h1 class="basic-header"><i class="fas fa-atom"></i> Basic.</h1>
+    </header>
+    <main class="join-main">
+        <p>Hello <%= name %> !</p>
+        <form action="/chat" method="GET">
+            <div class="form-group">
+                <label for="room">Select your Room</label>
+                <select name="room" id="room">
+                    <option value="Room A">Room A</option>
+                    <option value="Room B">Room B</option>
+                    <option value="Room C">Room C</option>
+                    <option value="Room D">Room D</option>
+                </select>
+                <div class="form-buttons"><button type="submit" class="btn">Join Chat</button><a href="/users/logout" class="btn">Logout</a></div>
+            </div>
+        </form>
+    </main>
+</div>
