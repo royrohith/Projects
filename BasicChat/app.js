@@ -23,7 +23,7 @@ const io = socketio(server);
 app.use(express.static(path.join(__dirname, 'public')));
 
 //Connect to db
-const db = 'mongodb+srv://rohith:7297@mycluster-quacc.mongodb.net/test?retryWrites=true&w=majority';
+const db = 'mongodb+srv://<username>:<password>@mycluster-quacc.mongodb.net/test?retryWrites=true&w=majority';
 mongoose.connect(db, {useUnifiedTopology: true, useNewUrlParser: true})
 .then(() => console.log('Mongodb Connected'))
 .catch(err => console.log(err));
